@@ -17,35 +17,6 @@ const rootElement = document.getElementById('app')
 
 const store = configureStore()
 
-store.dispatch(addExpense({
-  desc: 'water bill', 
-  amount: 5000,
-  createdAt: 1000
-}))
-
-store.dispatch(addExpense({
-  desc: 'gas bill', 
-  amount: 1200,
-  createdAt: 1000
-}))
-
-store.dispatch(addExpense({
-  desc: 'electric bill', 
-  amount: 4500,
-  createdAt: 2000
-}))
-
-store.dispatch(addExpense({
-  desc: 'food', 
-  amount: 4300,
-  createdAt: 1000
-}))
-
-// setTimeout(() => {
-//   store.dispatch(setTextFilter('water'))
-// },3000)
-
-
 const state = store.getState()
 const visibleExpenses = getVisibleExpenses(state.expenses, state.filters)
 console.log(visibleExpenses)
