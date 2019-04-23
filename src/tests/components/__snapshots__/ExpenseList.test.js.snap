@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render ExpenseList with NO expenses 1`] = `
+<div>
+  <p>
+    No expenses
+  </p>
+</div>
+`;
+
+exports[`should render ExpenseList with expenses 1`] = `
+<div>
+  <ConnectFunction
+    amount={666}
+    createdAt={0}
+    desc="testing 111"
+    id={1}
+    key="1"
+    note=""
+  />
+  <ConnectFunction
+    amount={166}
+    createdAt={-345600000}
+    desc="testing 122"
+    id={2}
+    key="2"
+    note=""
+  />
+  <ConnectFunction
+    amount={1000}
+    createdAt={345600000}
+    desc="testing 222"
+    id={3}
+    key="3"
+    note=""
+  />
+</div>
+`;
